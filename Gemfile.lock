@@ -54,6 +54,7 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
+    coderay (1.1.2)
     concurrent-ruby (1.0.2)
     debug_inspector (0.0.2)
     derailed (0.1.0)
@@ -86,6 +87,7 @@ GEM
     mail (2.6.4)
       mime-types (>= 1.16, < 4)
     memory_profiler (0.9.6)
+    method_source (0.9.0)
     mime-types (3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
@@ -95,6 +97,9 @@ GEM
     nokogiri (1.6.8.1)
       mini_portile2 (~> 2.1.0)
     pg (0.18.4)
+    pry (0.11.3)
+      coderay (~> 1.1.0)
+      method_source (~> 0.9.0)
     puma (2.15.3)
     query_diet (0.5.3)
     rack (1.6.5)
@@ -195,6 +200,7 @@ DEPENDENCIES
   jquery-rails
   jquery-ui-rails
   pg
+  pry
   puma
   query_diet
   rails (~> 4.2.7)
@@ -206,5 +212,8 @@ DEPENDENCIES
   uglifier
   web-console (~> 2.0)
 
+RUBY VERSION
+   ruby 2.2.4p230
+
 BUNDLED WITH
-   1.11.2
+   1.16.1

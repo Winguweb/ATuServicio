@@ -14,6 +14,7 @@ gem 'puma'
 gem 'actionpack-action_caching'
 gem 'rails-jquery-autocomplete'
 gem 'rollbar', '~> 2.7.1'
+gem 'pry'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
