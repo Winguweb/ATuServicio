@@ -21,7 +21,9 @@ ActiveRecord::Schema.define(version: 2018_05_11_205030) do
     t.text "address"
     t.geometry "georeference", limit: {:srid=>0, :type=>"geometry"}
     t.integer "provider_id", null: false
+    t.integer "state_id", null: false
     t.index ["provider_id"], name: "index_branches_on_provider_id"
+    t.index ["state_id"], name: "index_branches_on_state_id"
   end
 
   create_table "costs", force: :cascade do |t|
@@ -55,9 +57,7 @@ ActiveRecord::Schema.define(version: 2018_05_11_205030) do
     t.integer "financed_affiliations"
     t.text "communication_services"
     t.integer "logo_url"
-    t.integer "state_id", null: false
     t.index ["name"], name: "index_providers_on_name"
-    t.index ["state_id"], name: "index_providers_on_state_id"
   end
 
   create_table "providers_old", id: :serial, force: :cascade do |t|

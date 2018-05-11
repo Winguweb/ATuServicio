@@ -9,7 +9,6 @@ class CreateProvidersWithNewStructure < ActiveRecord::Migration[5.2]
       t.text :communication_services
       t.text :logo_url
       t.integer :logo_url
-      t.integer :state_id, null: false, index: true
     end
     add_index :providers, :name
   end

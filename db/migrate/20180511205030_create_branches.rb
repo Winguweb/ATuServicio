@@ -6,6 +6,7 @@ class CreateBranches < ActiveRecord::Migration[5.2]
       t.text :address
       t.geometry :georeference
       t.integer :provider_id, null: false, index: true
+      t.integer :state_id, null: false, index: true
     end
   end
 end
