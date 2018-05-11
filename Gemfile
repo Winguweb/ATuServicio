@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 ruby '2.4.1'
 
 gem 'rails', '~> 5.2.0'
+gem 'activerecord-postgis-adapter'
 gem 'pg'
 gem 'uglifier'
 gem 'sass-rails'
