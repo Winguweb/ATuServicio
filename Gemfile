@@ -13,7 +13,6 @@ gem 'jquery-ui-rails'
 gem 'rails-jquery-autocomplete'
 gem 'puma'
 gem 'rollbar'
-gem 'pry'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
@@ -22,6 +21,7 @@ gem 'pry'
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
+  gem 'pry'
   gem 'byebug'
   gem 'query_diet'
   gem 'bullet'
