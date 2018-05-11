@@ -54,6 +54,10 @@ ActiveRecord::Schema.define(version: 2018_05_11_205030) do
     t.integer "affiliations"
     t.integer "financed_affiliations"
     t.text "communication_services"
+    t.integer "logo_url"
+    t.integer "state_id", null: false
+    t.index ["name"], name: "index_providers_on_name"
+    t.index ["state_id"], name: "index_providers_on_state_id"
   end
 
   create_table "providers_old", id: :serial, force: :cascade do |t|
